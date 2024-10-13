@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Lækker Mad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+                body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        .header h1 {
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #2c3e50;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .food-icon {
+            font-size: 48px;
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .food-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .food-item:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #e74c3c;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .footer-links a:hover {
+            background-color: #2c3e50;
+        }
+        
+        /* Copy the styles from your index.html file and add these additional styles */
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .blog-post {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 20px;
+        }
+        .blog-content h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .blog-content p {
+            color: #34495e;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .blog-meta {
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Blog</h1>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html">Forside</a>
+            <div class="dropdown">
+                <a href="opskrifter.html">Opskrifter</a>
+                <div class="dropdown-content">
+                    <a href="forretter.html">Forretter</a>
+                    <a href="hovedretter.html">Hovedretter</a>
+                    <a href="dessert.html">Dessert</a>
+                </div>
+            </div>
+            <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+            <a href="tips-og-tricks.html">Tips og Tricks</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="om-os.html">Om Os</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="food-icon">
+            <i class="fas fa-pen-fancy"></i>
+        </div>
+        
+        <h2>Vores Seneste Blogindlæg</h2>
+        <p>Udforsk vores spændende artikler om mad, opskrifter, og kulinariske eventyr!</p>
+
+        <section class="blog-posts">
+            <!-- Existing blog posts will be dynamically added here -->
+        </section>
+    </div>
+
+    <script>
+        function addBlogPost(title, content, date, author, imageUrl) {
+            const blogSection = document.querySelector('.blog-posts'); // Assuming .blog-posts is the container for blog posts
+
+            const blogPost = document.createElement('div');
+            blogPost.className = 'blog-post';
+
+            blogPost.innerHTML = `
+                <img src="${imageUrl}" alt="Blogindlæg billede">
+                <div class="blog-content">
+                    <h3>${title}</h3>
+                    <p>${content}</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> ${date}</span>
+                        <span><i class="far fa-user"></i> Af ${author}</span>
+                    </div>
+                    <a href="#" class="read-more">Læs mere</a>
+                </div>
+            `;
+
+            blogSection.appendChild(blogPost);
+
+            // Add event listener for "Læs mere" link
+            blogPost.querySelector('.read-more').addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('Læs mere clicked for: ' + title);
+                // You can replace the alert with your desired action
+            });
+        }
+
+        // Example usage:
+        addBlogPost(
+            'Guide til Perfekt Brødbagning',
+            'Lær hemmeligheden bag sprødt og luftigt hjemmebagt brød...',
+            '2. maj 2023',
+            'Peter Nielsen',
+            'https://via.placeholder.com/300x200'
+        );
+
+        addBlogPost(
+            'Sæsonens Bedste Grøntsager',
+            'Udforsk de lækreste grøntsager i sæson og hvordan du bruger dem...',
+            '20. april 2023',
+            'Sofie Hansen',
+            'https://via.placeholder.com/300x200'
+        );
+
+        addBlogPost(
+            'Madlavning med Børn',
+            'Sådan involverer du børnene i køkkenet og gør madlavning sjovt...',
+            '10. april 2023',
+            'Lars Pedersen',
+            'https://via.placeholder.com/300x200'
+        );
+    </script>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Forside</a>
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="tips-og-tricks.html">Tips og Tricks</a>
+            <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+            <a href="blog.html">Blog</a>
+            <a href="om-os.html">Om Os</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="nyhedsbrev.html">Tilmeld Nyhedsbrev</a>
+            <a href="faq.html">FAQ</a>
+            
+        </div>
+        
+        
+    </footer>
+
+    <script>
+        // You can add any JavaScript here if needed
+    </script>
+</body>
+</html>

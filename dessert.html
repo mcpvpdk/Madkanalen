@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert - Lækker Mad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        .header h1 {
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #2c3e50;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .food-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .food-item:last-child {
+            border-bottom: none;
+        }
+        .food-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .food-item-content {
+            flex: 1;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .footer-links a:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dessert</h1>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html">Forside</a>
+            <a href="forretter.html">Forretter</a>
+            <a href="hovedretter.html">Hovedretter</a>
+            <a href="dessert.html">Dessert</a>
+
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="saesonens-raavarer.html" class="active">Sæsonens Råvarer</a>
+            <a href="om-os.html">Om Os</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>Vores Lækre Desserter</h2>
+        <p>Afslut dit måltid med en af vores skønne desserter!</p>
+
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Tiramisu">
+            <div class="food-item-content">
+                <h3>Tiramisu</h3>
+                <p>Klassisk italiensk dessert med kaffe, mascarpone og kakao. En cremet og smagfuld afslutning på ethvert måltid.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Æbletærte">
+            <div class="food-item-content">
+                <h3>Æbletærte</h3>
+                <p>Hjemmebagt æbletærte serveret med vaniljeis. En perfekt kombination af sprød tærtebund og saftige æbler.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Chokolade Mousse">
+            <div class="food-item-content">
+                <h3>Chokolade Mousse</h3>
+                <p>Luftig og intens chokolade mousse, toppet med friske bær og et strejf af mynte.</p>
+            </div>
+        </div>
+
+        <!-- Add more dessert items as needed -->
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Forside</a>
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="tips-og-tricks.html">Tips og Tricks</a>
+            <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+            <a href="om-os.html">Om Os</a>
+
+            <a href="blog.html">Blog</a>
+            <a href="nyhedsbrev.html">Tilmeld Nyhedsbrev</a>
+            <a href="faq.html">FAQ</a>
+            <a href="privatlivspolitik.html">Privatlivspolitik</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+        // You can add any JavaScript here if needed
+    </script>
+</body>
+</html>

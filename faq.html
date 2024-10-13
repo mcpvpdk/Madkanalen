@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Lækker Mad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+                body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        .header h1 {
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #2c3e50;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .food-icon {
+            font-size: 48px;
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .food-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .food-item:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #e74c3c;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .footer-links a:hover {
+            background-color: #2c3e50;
+        }
+        
+        /* Copy the styles from your index.html file and add these additional styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '\f078';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            color: #34495e;
+            display: none;
+            margin-top: 10px;
+        }
+        .faq-answer.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FAQ</h1>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html">Forside</a>
+            <div class="dropdown">
+                <a href="opskrifter.html">Opskrifter</a>
+                <div class="dropdown-content">
+                    <a href="forretter.html">Forretter</a>
+                    <a href="hovedretter.html">Hovedretter</a>
+                    <a href="dessert.html">Dessert</a>
+                </div>
+            </div>
+            <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+            <a href="tips-og-tricks.html">Tips og Tricks</a>
+            <a href="blog.html">Blog</a>
+            <a href="om-os.html">Om Os</a>
+            <a href="faq.html" class="active">FAQ</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="food-icon">
+            <i class="fas fa-question-circle"></i>
+        </div>
+        
+        <h2>Ofte Stillede Spørgsmål</h2>
+        <p>Find svar på de mest almindelige spørgsmål om vores opskrifter, ingredienser og madlavningstips.</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Hvordan kan jeg tilpasse en opskrift til flere eller færre personer?</div>
+                <div class="faq-answer">Du kan nemt justere mængden af ingredienser ved at bruge vores indbyggede portionsberegner på hver opskriftsside. Vælg blot det ønskede antal portioner, og ingredienslisterne opdateres automatisk.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Hvor finder jeg information om allergener i opskrifterne?</div>
+                <div class="faq-answer">Vi angiver almindelige allergener under hver opskrift. Hvis du har specifikke allergier eller intoleranser, anbefaler vi altid at tjekke ingredienslisten grundigt eller kontakte os for yderligere information.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Kan jeg erstatte ingredienser i opskrifterne?</div>
+                <div class="faq-answer">Ja, mange ingredienser kan erstattes. Vi giver ofte forslag til alternativer direkte i opskrifterne. Hvis du er i tvivl, kan du altid spørge i kommentarfeltet under opskriften, hvor vores madeksperter og community kan hjælpe.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Hvordan indsender jeg min egen opskrift?</div>
+                <div class="faq-answer">Vi elsker at modtage opskrifter fra vores community! Du kan indsende din opskrift via vores "Del Din Opskrift" formular på kontaktsiden. Vores team gennemgår alle indsendte opskrifter og kontakter dig, hvis din opskrift bliver valgt til publicering.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Hvordan tilmelder jeg mig jeres nyhedsbrev?</div>
+                <div class="faq-answer">Du kan tilmelde dig vores nyhedsbrev ved at indtaste din e-mailadresse i feltet i bunden af vores hjemmeside eller på vores dedikerede nyhedsbrevs-tilmeldingsside. Vi sender ugentlige opdateringer med nye opskrifter, sæsonbetonede tips og eksklusive tilbud.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Forside</a>
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="tips-og-tricks.html">Tips og Tricks</a>
+            <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+            <a href="blog.html">Blog</a>
+            <a href="om-os.html">Om Os</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="nyhedsbrev.html">Tilmeld Nyhedsbrev</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <p class="copyright">&copy; 2024 Lækker Mad. Alle rettigheder forbeholdes.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

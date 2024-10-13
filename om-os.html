@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Os - Lækker Mad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .about-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #3498db;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .right::after {
+            left: -16px;
+        }
+            /* ... existing styles ... */
+        
+
+            .footer {
+            background-color: #34495e;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .footer-links a:hover {
+            background-color: #2c3e50;
+        }
+        .footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 3em 0 1em;
+        font-size: 0.9em;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-section {
+        margin-bottom: 2em;
+    }
+    
+    .footer-section h3 {
+        color: #3498db;
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+    
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 0.5em;
+    }
+    
+    .footer-section a, .footer-bottom a {
+        color: #ecf0f1;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-section a:hover, .footer-bottom a:hover {
+        color: #3498db;
+    }
+    
+    .social-links {
+        margin-top: 1em;
+    }
+    
+    .social-links a {
+        font-size: 1.5em;
+        margin-right: 1em;
+        color: #ecf0f1;
+        transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+        color: #3498db;
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid #34495e;
+        padding-top: 1em;
+        text-align: center;
+        margin-top: 2em;
+    }
+    
+    .footer-bottom p {
+        margin: 0.5em 0;
+    }
+        </style>
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Om Os</h1>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html">Forside</a>
+            <a href="forretter.html">Forretter</a>
+            <a href="hovedretter.html">Hovedretter</a>
+            <a href="dessert.html">Dessert</a>
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+            <a href="om-os.html" class="active">Om Os</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>Velkommen til Lækker Mad</h2>
+        <p>Vi er passionerede omkring god mad og ønsker at dele vores kærlighed til gastronomi med dig!</p>
+
+        <div class="about-section">
+            <h3>Vores Historie</h3>
+            <div class="timeline">
+                <div class="">
+                </div>
+                <div class="">
+                    <h4>2022</h4>
+                    <p>Åbning af vores første fysiske madskole.</p>
+                </div>
+                <div class="timeline-item right">
+                    <h4>2023</h4>
+                    <p>Lækker Mad bliver Danmarks mest besøgte madblog.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h3>Vores Mission</h3>
+            <p>Vores mål er at inspirere folk til at lave lækker, sund og varieret mad derhjemme. Vi tror på, at god mad bringer folk sammen og skaber glæde i hverdagen.</p>
+        </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="opskrifter.html">Opskrifter</a></li>
+                    <li><a href="madplanlaegger.html">Madplanlægger</a></li>
+                    <li><a href="tips-og-tricks.html">Tips og Tricks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Udforsk</h3>
+                <ul>
+                    <li><a href="saesonens-raavarer.html">Sæsonens Råvarer</a></li>
+                    <li><a href="om-os.html">Om Os</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+        // You can add any JavaScript here if needed
+    </script>
+</body>
+</html>

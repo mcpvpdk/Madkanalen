@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandestegte mosede Kartofler - Lækker Mad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .ingredients, .instructions {
+            margin-top: 20px;
+        }
+        .ingredients h2, .instructions h2 {
+            color: #e74c3c;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+            /* ... (previous styles remain the same) ... */
+            .portion-selector {
+                margin: 20px 0;
+            }
+            .portion-selector label {
+                margin-right: 10px;
+            }
+            .portion-selector input {
+                width: 50px;
+            }
+            .footer {
+            background-color: #34495e;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .footer-links a:hover {
+            background-color: #2c3e50;
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #2c3e50;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav-content">
+                <a href="#forside">Forside</a>
+                <a href="/forretter.html">Forretter</a>
+                <a href="hovedretter.html">Hovedretter</a>
+                <a href="dessert.html">Dessert</a>
+    
+                <a href="opskrifter.html">Opskrifter</a>
+                <a href="saesonens-raavarer.html" class="active">Sæsonens Råvarer</a>
+                <a href="om-os.html">Om Os</a>
+    
+            </div>
+        </nav>
+        <h1>Pandestegte mosede Kartofler</h1>
+        
+        <img src="https://via.placeholder.com/600x400" alt="Pandestegte mosede Kartofler">
+        
+        <p>Disse lækre pandestegte mosede kartofler er sprøde udenpå og bløde indeni. De er perfekte som tilbehør til mange retter og giver et lækkert twist til de klassiske mosede kartofler.</p>
+        
+        <div class="portion-selector">
+            <label for="portions">Antal portioner:</label>
+            <input type="number" id="portions" name="portions" value="4" min="1" max="20">
+        </div>
+        
+        <div class="ingredients">
+            <h2>Ingredienser</h2>
+            <ul>
+                <li><span id="kartofler">1000</span> g kartofler</li>
+                <li><span id="smor">50</span> g smør</li>
+                <li><span id="olie">2</span> spsk olivenolie</li>
+                <li><span id="rosmarin">2</span> kviste frisk rosmarin</li>
+                <li>Salt og friskkværnet peber</li>
+                <li><span id="hvidlog">2</span> fed hvidløg (valgfrit)</li>
+            </ul>
+        </div>
+        
+        <div class="instructions">
+            <h2>Fremgangsmåde</h2>
+            <ol>
+                <li>Skræl kartoflerne og kog dem i saltet vand, indtil de er møre.</li>
+                <li>Mos kartoflerne groft med en gaffel eller kartoffelmoser. De skal ikke være helt fint mosede.</li>
+                <li>Varm smør og olie på en stor pande ved medium varme.</li>
+                <li>Tilsæt de mosede kartofler og spred dem ud i et jævnt lag.</li>
+                <li>Tilføj rosmarinkviste og presset hvidløg (hvis du bruger det).</li>
+                <li>Steg kartoflerne i 10-15 minutter uden at røre for meget ved dem, så de danner en sprød skorpe i bunden.</li>
+                <li>Vend forsigtigt kartoflerne og steg i yderligere 5-10 minutter, til de er gyldne og sprøde.</li>
+                <li>Krydr med salt og peber efter smag.</li>
+                <li>Server straks mens kartoflerne er varme og sprøde.</li>
+            </ol>
+        </div>
+        
+        <p><strong>Tip:</strong> For ekstra smag kan du tilføje finthakket persille eller revet parmesan lige før servering.</p>
+        
+        
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="opskrifter.html">Tilbage til opskrifter</a>
+                <a href="index.html">Forside</a>
+                <a href="opskrifter.html">Opskrifter</a>
+                <a href="tips-og-tricks.html">Tips og Tricks</a>
+                <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+                <a href="om-os.html">Om Os</a>
+                <a href="blog.html">Blog</a>
+                <a href="nyhedsbrev.html">Tilmeld Nyhedsbrev</a>
+                <a href="faq.html">FAQ</a>
+                
+    
+    
+            </div>
+    
+           </div>
+    
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const portionsInput = document.getElementById('portions');
+                const ingredients = {
+                    kartofler: 250,
+                    smor: 12.5,
+                    olie: 0.5,
+                    rosmarin: 0.5,
+                    hvidlog: 0.5
+                };
+    
+                function updateIngredients() {
+                    const portions = parseInt(portionsInput.value);
+                    for (const [id, baseAmount] of Object.entries(ingredients)) {
+                        const element = document.getElementById(id);
+                        if (element) {
+                            let amount = baseAmount * portions;
+                            if (amount % 1 !== 0) {
+                                amount = amount.toFixed(1);
+                            }
+                            element.textContent = amount;
+                        }
+                    }
+                }
+    
+                portionsInput.addEventListener('input', updateIngredients);
+                updateIngredients(); // Initial update
+            });
+        </script>
+    </body>
+    </html>

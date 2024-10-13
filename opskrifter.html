@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opskrifter - Lækker Mad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Copy the styles from index.html */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        .header h1 {
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #2c3e50;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .food-icon {
+            font-size: 48px;
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .food-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .food-item:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #e74c3c;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s;
+        }
+        .footer-links a:hover {
+            background-color: #2c3e50;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Opskrifter</h1>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#forside">Forside</a>
+            <a href="/forretter.html">Forretter</a>
+            <a href="hovedretter.html">Hovedretter</a>
+            <a href="dessert.html">Dessert</a>
+
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="saesonens-raavarer.html" class="active">Sæsonens Råvarer</a>
+            <a href="om-os.html">Om Os</a>
+
+            <!-- Add other navigation links as needed -->
+        </div>
+    </nav>
+
+    
+    <div class="content">
+        <h2>Vores Opskrifter</h2>
+        <p>Her finder du alle vores lækre opskrifter. God fornøjelse med madlavningen!</p>
+        <!-- Add your recipes content here -->
+        <h2 id="forside">Velkommen til Lækker Mad</h2>
+        <p>Udforsk vores lækre retter og find inspiration til dit næste måltid!</p>
+
+        <h2 id="forretter">Forretter</h2>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Bruschetta">
+            <div class="food-item-content">
+                <h3>Bruschetta</h3>
+                <p>Ristet brød med friske tomater, basilikum og hvidløg.</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Rejecocktail">
+            <div class="food-item-content">
+                <h3>Rejecocktail</h3>
+                <p>Friske rejer serveret med salat og vores hjemmelavede dressing.</p>
+            </div>
+        </div>
+
+        <h2 id="hovedretter">Hovedretter</h2>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Pasta Carbonara">
+            <div class="food-item-content">
+                <h3>Pasta Carbonara</h3>
+                <p>Cremet pasta med pancetta, æg og parmesan.</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Grillet Laks">
+            <div class="food-item-content">
+                <h3>Grillet Laks</h3>
+                <p>Saftig laks serveret med grøntsager og citron-dild sauce.</p>
+            </div>
+        </div>
+
+        <h2 id="dessert">Dessert</h2>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Tiramisu">
+            <div class="food-item-content">
+                <h3>Tiramisu</h3>
+                <p>Klassisk italiensk dessert med kaffe, mascarpone og kakao.</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Æbletærte">
+            <div class="food-item-content">
+                <h3>Æbletærte</h3>
+                <p>Hjemmebagt æbletærte serveret med vaniljeis.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <h2 id="kartoffelretter">Kartoffelretter</h2>
+    <div class="food-item">
+        <img src="https://via.placeholder.com/150" alt="Ovnbagte Kartofler">
+        <div class="food-item-content">
+            <h3><a href="kartofler.html"><h3>Ovnbagte Kartofler</h3></a></h3>
+            <p>Sprøde og lækre ovnbagte kartofler med rosmarin og hvidløg.</p>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="https://via.placeholder.com/150" alt="Pandestegte mosede Kartofler">
+        <div class="food-item-content">
+            <a href="pandestegte-kartofler.html"><h3>Pandestegte mosede Kartofler</h3></a>
+            <p>Smørstegte mosede kartofler med rosmarin</p>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="https://via.placeholder.com/150" alt="Kartoffelsalat">
+        <div class="food-item-content">
+            <h3>Kartoffelsalat</h3>
+            <p>Klassisk dansk kartoffelsalat med cremefraiche og purløg.</p>
+        </div>
+    </div>
+
+    <h2 id="dessert">Dessert</h2>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Forside</a>
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="tips-og-tricks.html">Tips og Tricks</a>
+            <a href="saesonens-raavarer.html">Sæsonens Råvarer</a>
+            <a href="om-os.html">Om Os</a>
+            <a href="blog.html">Blog</a>
+            <a href="nyhedsbrev.html">Tilmeld Nyhedsbrev</a>
+            <a href="faq.html">FAQ</a>
+            <a href="privatlivspolitik.html">Privatlivspolitik</a>
+            
+        </div>
+
+       </div>
+       
+    </footer>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
